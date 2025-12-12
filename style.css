@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+/* CORRECCIÓN PRINCIPAL: PREVENIR SCROLL HORIZONTAL */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -186,10 +193,6 @@ body {
 /* ————————————————
    BANNER RESPONSIVE
 ——————————————— */
-/* ————————————————
-   BANNER RESPONSIVE FIX
-——————————————— */
- /* CONTENEDOR GENERAL */
 .banner {
   width: 100%;
   position: relative;
@@ -201,6 +204,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
+  max-width: 100%;
 }
 
 /* TEXTO SOBRE LA IMAGEN */
@@ -451,7 +455,7 @@ body {
         height: 70px;
 
         /* Mantiene proporción de PC */
-        left: calc(100% - 110px); /* equivalente visual al “left:490px” en PC */
+        left: calc(100% - 110px); /* equivalente visual al "left:490px" en PC */
         bottom: -15px;
     }
 }
@@ -1660,4 +1664,70 @@ body {
   .footer-mapa {
     border: 2px solid currentColor;
   }
+}
+
+/* ===================================== */
+/* CORRECCIONES ESPECÍFICAS PARA SCROLL HORIZONTAL */
+/* ===================================== */
+
+/* Asegurar que todas las imágenes no excedan el ancho */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Asegurar que el iframe del mapa no cause problemas */
+.footer-mapa iframe {
+  max-width: 100%;
+  display: block;
+}
+
+/* Corregir el problema de zoom en móvil - mantener viewport intacto */
+@media (max-width: 900px) {
+  .banner-text {
+    font-size: 22px;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Asegurar que los elementos flex no se desborden */
+  .cards-container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .valores-grid-container {
+    width: 100%;
+    padding: 40px 15px;
+  }
+  
+  .services-container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .comentarios-section {
+    width: 100%;
+    padding: 20px 15px;
+  }
+}
+
+/* Prevenir que elementos con posición absoluta causen scroll */
+.service-image,
+.promo-banner,
+.comentarios-slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Asegurar que el contenedor del slider no cause overflow */
+.comentarios-slider {
+  width: max-content;
+}
+
+/* CORRECCIÓN FINAL: Garantizar que el body no tenga scroll horizontal */
+body {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
 }
