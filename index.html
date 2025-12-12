@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valench - Nails Beauty</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== TOP BAR ===== -->
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+      <div class="top-content">
+        <div class="top-left">
+          <img src="assets/icon/icontime.svg" class="icon-clock" alt="" />
+          <span>De lunes a viernes: 10:00 a 19:00 h.</span>
+        </div>
+
+        <div class="top-right">
+          <a
+            href="https://www.tiktok.com/@valenchnb"
+            target="_blank"
+            class="social-icon tiktok"
+            aria-label="TikTok"
+          >
+            <svg viewBox="0 0 256 256">
+              <path
+                fill="currentColor"
+                d="M224 72.6a93.2 93.2 0 0 1-54-17.4v94.1a69.3 69.3 0 1 1-58.3-68.4v30.3a39.1 39.1 0 1 0 28.9 37.6V0h29.4a64 64 0 0 0 64 64Z"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="https://www.facebook.com/profile.php?id=61584117718628"
+            target="_blank"
+            class="social-icon facebook"
+            aria-label="Facebook"
+          >
+            <svg viewBox="0 0 320 512">
+              <path
+                fill="currentColor"
+                d="M279 288l14-92h-89v-60c0-25 12-49 52-49h40V6s-36-6-70-6c-72 0-118 44-118 124v72H38v92h70v224h104V288z"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="https://www.instagram.com/valenchnails/"
+            target="_blank"
+            class="social-icon instagram"
+            aria-label="Instagram"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zm4.75-3.25a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25z"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="https://wa.me/593989001762"
+            target="_blank"
+            class="social-icon whatsapp"
+            aria-label="WhatsApp"
+          >
+            <svg viewBox="0 0 32 32">
+              <path
+                fill="currentColor"
+                d="M16 3A13 13 0 0 0 4.3 22.8L3 29l6.4-1.7A13 13 0 1 0 16 3zm0 2a11 11 0 0 1 9.7 16.2l-.3.6l.8 4.7l-4.5-1.2l-.6.3A11 11 0 1 1 16 5zm6.2 13.4c-.3-.2-1.8-.9-2.1-1s-.5-.2-.8.2s-1 1.2-1.2 1.4s-.4.3-.7.1s-1.4-.5-2.7-1.7c-1-.9-1.7-2-1.9-2.3s0-.5.2-.7s.4-.6.6-.9s.2-.5.1-.7s-.7-1.8-1-2.5s-.5-.6-.8-.6H10a1.6 1.6 0 0 0-1.1.5c-.4.4-1.3 1.2-1.3 3s1.3 3.4 1.5 3.7s2.5 3.6 6.2 5.1c3.1 1.3 3.7 1.1 4.4 1s2.2-.8 2.4-1.5s.3-1.4.2-1.6s-.3-.4-.7-.6z"
+              />
+            </svg>
+          </a>
+
+          <a href="#" class="btn-reservar">Quiero reservar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+      <div class="header-container">
+        <!-- LOGO -->
+        <img src="assets/logo/logohori.png" class="logo" alt="Valench" />
+
+        <!-- MENU (solo PC) -->
+        <nav class="menu">
+          <a href="#sobre-valench">sobre valench</a>
+          <a href="#sobre-servicios">servicios</a>
+          <a href="#sobre-contacto">contacto</a>
+        </nav>
+
+        <!-- ICONO HAMBURGUESA (solo MÓVIL) -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- BANNER RESPONSIVE -->
+      <section class="banner">
+        <!-- Imagen móvil -->
+        <img
+          class="banner-mobile"
+          src="assets/banner/bannermovil.svg"
+          alt="Banner para móvil"
+        />
+
+        <!-- Texto -->
+        <div class="banner-text">
+          Experiencias diseñadas<br />
+          para una <span class="purple-word">belleza que empodera</span>
+        </div>
+      </section>
+
+      <section class="seccion-conoce-mas">
+        <span class="texto-conoce-mas">conoce más</span>
+      </section>
+
+      <!-- CARD IMAGEN PERSONA Y DESCRIPCION-->
+      <!-- CARD IMAGEN PERSONA Y DESCRIPCION-->
+      <section id="sobre-valench" class="sobre-valench-section">
+        <div class="cards-container">
+          <!-- Card de Texto -->
+          <div class="card text-card">
+            <img
+              src="assets/recursosicon/vderecha.svg"
+              alt=""
+              class="icon-izquierdo"
+            />
+
+            <h2 class="titulo-sobre">Sobre Valench</h2>
+
+            <p>
+              Hola Soy Valentina Maricuzza Profesional certificada con más de 5
+              años de experiencia comprendiendo con la excelencia y el detalle.
+              Valench nace del profundo deseo de empoderar a la mujeres a través
+              de la belleza, ayudándolas a realizarse aunque sea en esos
+              momentos. Fortaleciendo su seguridad, autenticidad y autoestima.
+              Mi misión es ofrecer un espacio donde puedas sentirte cuidada,
+              relajada y valorada, disfrutando de servicios de alta calidad.
+              Porque cuando te sientes bien y bonita contigo mismo todo lo demás
+              fluye <strong>Valench es belleza que empodera.</strong>
+            </p>
+          </div>
+
+          <!-- Card de Imagen -->
+          <div class="card image-card">
+            <!-- clase .main-image para la imagen grande -->
+            <img
+              src="assets/persona.svg"
+              alt="Valentina Maricuzza"
+              class="main-image"
+            />
+            <!-- icono pequeño en la esquina -->
+            <img
+              src="assets/recursosicon/vizquierda.svg"
+              alt=""
+              class="icon-derecho"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="seccion-nuestros-valores">
+        <span class="texto-conoce-mas">nuestros valores</span>
+      </section>
+      <div class="valores-grid-container">
+        <div class="valor-item">
+          <!-- SVG: Corazón simple -->
+          <img
+            src="assets/icon/iconcorazon.svg"
+            alt="Corazón - Comunicación"
+            class="icon-svg"
+          />
+          <p>Comunicación cercana y ambiente cálido</p>
+        </div>
+
+        <div class="valor-item">
+          <!-- SVG: Corazones dobles -->
+          <img
+            src="assets/icon/icondoblecorazon.svg"
+            alt="Corazones - Profesionalismo"
+            class="icon-svg"
+          />
+          <p>Profesionalismo y compromiso</p>
+        </div>
+
+        <div class="valor-item">
+          <!-- SVG: Mano -->
+          <img
+            src="assets/icon/iconmano.svg"
+            alt="Mano - Cuidado por el detalle"
+            class="icon-svg"
+          />
+          <p>Cuidado por el detalle</p>
+        </div>
+      </div>
+
+      <section id="sobre-servicios" class="seccion-servicios">
+        <h2 class="titulo-servicios estilo-subrayado">nuestros servicios</h2>
+      </section>
+      <!-- Sección 8: Servicios -->
+      <section class="services-section">
+        <div class="services-container">
+          <!-- Grid principal con 6 cards (2 filas de 3) -->
+          <div class="services-grid">
+            <!-- Card 1: Uñas Acrílicas -->
+            <div class="service-card" data-service="Uñas acrílicas">
+              <div class="service-image" data-carousel="acrilico">
+                <img
+                  src="assets/acrilico/acri1.jpeg"
+                  alt="Uñas acrílicas"
+                  class="active"
+                />
+                <img src="assets/acrilico/acri2.jpeg" alt="Uñas acrílicas" />
+                <img src="assets/acrilico/acri3.jpeg" alt="Uñas acrílicas" />
+                <img src="assets/acrilico/acri4.jpeg" alt="Uñas acrílicas" />
+                <img src="assets/acrilico/acri5.jpeg" alt="Uñas acrílicas" />
+                <img src="assets/acrilico/acri6.jpeg" alt="Uñas acrílicas" />
+
+                <div class="image-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                  <span class="dot" data-index="3"></span>
+                  <span class="dot" data-index="4"></span>
+                  <span class="dot" data-index="5"></span>
+                </div>
+              </div>
+
+              <div class="service-content">
+                <h3>Uñas acrílicas</h3>
+                <p>
+                  Manicuristas profesionales en uñas acrílicas con todo tipo de
+                  diseño y variedad de colores, garantizando una manicura de
+                  alta calidad
+                </p>
+                <div class="service-meta">
+                  <span>🕒 2-3 horas</span>
+                  <span>📅 3-4 semanas</span>
+                </div>
+                <button class="service-btn">Quiero reservar</button>
+              </div>
+            </div>
+
+            <!-- Card 2: Polygel (RUTAS CORREGIDAS) -->
+            <div class="service-card" data-service="Polygel">
+              <div class="service-image" data-carousel="polygel">
+                <img
+                  src="assets/polygel/poli1.jpeg"
+                  alt="Polygel"
+                  class="active"
+                />
+                <img src="assets/polygel/poli2.jpeg" alt="Polygel" />
+                <img src="assets/polygel/poli3.jpeg" alt="Polygel" />
+                <img src="assets/polygel/poli4.jpeg" alt="Polygel" />
+
+                <div class="image-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                  <span class="dot" data-index="3"></span>
+                  <span class="dot" data-index="4"></span>
+                  <span class="dot" data-index="5"></span>
+                </div>
+              </div>
+
+              <div class="service-content">
+                <h3>Polygel</h3>
+                <p>
+                  Consigue el acabado de uñas acrílicas, pero más resistente y
+                  ligero con la facilidad de aplicación de gel
+                </p>
+                <div class="service-meta">
+                  <span>🕒 1.5-2 horas</span>
+                  <span>📅 3-4 semanas</span>
+                </div>
+                <button class="service-btn">Quiero reservar</button>
+              </div>
+            </div>
+
+            <!-- Card 3: Builder Gel (RUTAS CORREGIDAS) -->
+            <div class="service-card" data-service="Builder Gel">
+              <div class="service-image" data-carousel="builder">
+                <img
+                  src="assets/buildergel/buil1.jpeg"
+                  alt="Builder Gel"
+                  class="active"
+                />
+                <img src="assets/buildergel/buil2.jpeg" alt="Builder Gel" />
+                <img src="assets/buildergel/buil3.jpeg" alt="Builder Gel" />
+                <img src="assets/buildergel/buil4.jpeg" alt="Builder Gel" />
+
+                <div class="image-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                  <span class="dot" data-index="3"></span>
+                </div>
+              </div>
+
+              <div class="service-content">
+                <h3>Builder Gel</h3>
+                <p>
+                  Gel constructor que permite alargar y crear todo tipo de
+                  formas. Ideal para uñas fuertes y bien estilizadas
+                </p>
+                <div class="service-meta">
+                  <span>🕒 2-2.5 horas</span>
+                  <span>📅 3-4 semanas</span>
+                </div>
+                <button class="service-btn">Quiero reservar</button>
+              </div>
+            </div>
+
+            <!-- Card 4: Rubber -->
+            <div class="service-card" data-service="Rubber">
+              <div class="service-image" data-carousel="kumer">
+                <img
+                  src="assets/rubber/rub1.jpeg"
+                  alt="Rubber base"
+                  class="active"
+                />
+                <img src="assets/rubber/rub2.jpg" alt="Rubber base" />
+                <img src="assets/rubber/rub3.jpeg" alt="Rubber base" />
+                <img src="assets/rubber/rub4.jpeg" alt="Rubber base" />
+                <img src="assets/rubber/rub5.jpeg" alt="Rubber base" />
+
+                <div class="image-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                  <span class="dot" data-index="3"></span>
+                  <span class="dot" data-index="4"></span>
+                </div>
+              </div>
+
+              <div class="service-content">
+                <h3>Rubber</h3>
+                <p>
+                  Base de reconstrucción en gel especial para uñas débiles o
+                  mordidas que aporta resistencia
+                </p>
+                <div class="service-meta">
+                  <span>🕒 1-1.5 horas</span>
+                  <span>📅 3-4 semanas</span>
+                </div>
+                <button class="service-btn">Quiero reservar</button>
+              </div>
+            </div>
+
+            <!-- Card 5: Semipermanentes -->
+            <div class="service-card" data-service="Semipermanentes">
+              <div class="service-image" data-carousel="semi">
+                <img
+                  src="assets/semipermanente/semi1.jpeg"
+                  alt="Semipermanentes"
+                  class="active"
+                />
+                <img
+                  src="assets/semipermanente/semi2.jpeg"
+                  alt="Semipermanentes"
+                />
+                <img
+                  src="assets/semipermanente/semi3.png"
+                  alt="Semipermanentes"
+                />
+                <img
+                  src="assets/semipermanente/semi4.jpeg"
+                  alt="Semipermanentes"
+                />
+                <img
+                  src="assets/semipermanente/semi5.jpeg"
+                  alt="Semipermanentes"
+                />
+                <img
+                  src="assets/semipermanente/semi6.jpeg"
+                  alt="Semipermanentes"
+                />
+                <img
+                  src="assets/semipermanente/semi7.jpeg"
+                  alt="Semipermanentes"
+                />
+
+                <div class="image-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                  <span class="dot" data-index="3"></span>
+                  <span class="dot" data-index="4"></span>
+                  <span class="dot" data-index="5"></span>
+                  <span class="dot" data-index="6"></span>
+                </div>
+              </div>
+
+              <div class="service-content">
+                <h3>Semipermanentes</h3>
+                <p>
+                  Esmaltado de uñas que dura hasta 3 semanas sin descascararse o
+                  perder brillo. Amplia gama de colores
+                </p>
+                <div class="service-meta">
+                  <span>🕒 45-60 min</span>
+                  <span>📅 2-3 semanas</span>
+                </div>
+                <button class="service-btn">Quiero reservar</button>
+              </div>
+            </div>
+
+            <!-- Card 6: Soft Gel -->
+            <div class="service-card" data-service="Soft Gel">
+              <div class="service-image" data-carousel="softgel">
+                <img
+                  src="assets/softgel/soft1.jpg"
+                  alt="Soft Gel"
+                  class="active"
+                />
+                <img src="assets/softgel/soft2.jpeg" alt="Soft Gel" />
+                <img src="assets/softgel/soft3.jpeg" alt="Soft Gel" />
+                <img src="assets/softgel/soft4.jpeg" alt="Soft Gel" />
+                <img src="assets/softgel/soft5.jpeg" alt="Soft Gel" />
+
+                <div class="image-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                  <span class="dot" data-index="3"></span>
+                  <span class="dot" data-index="4"></span>
+                  <span class="dot" data-index="5"></span>
+                </div>
+              </div>
+
+              <div class="service-content">
+                <h3>Soft Gel</h3>
+                <p>
+                  Esmaltado en gel con mayor durabilidad y flexibilidad que las
+                  uñas acrílicas con un acabado natural
+                </p>
+                <div class="service-meta">
+                  <span>🕒 1-1.5 horas</span>
+                  <span>📅 3-4 semanas</span>
+                </div>
+                <button class="service-btn">Quiero reservar</button>
+              </div>
+            </div>
+          </div>
+          <!-- FIN GRID -->
+
+          <!-- Última fila: 1 card + 1 banner -->
+          <div class="services-bottom">
+            <!-- Card 7: Pestañas -->
+            <div class="service-card" data-service="Pestañas punto a punto">
+              <div class="service-image" data-carousel="pestanas">
+                <img src="assets/ojospes.jpg" alt="Pestañas" class="active" />
+
+                <div class="image-dots">
+                  <span class="dot active" data-index="0"></span>
+                </div>
+              </div>
+
+              <div class="service-content">
+                <h3>Pestañas punto a punto</h3>
+                <p>
+                  Consigue una mirada impactante con el volumen perfecto para
+                  tus ojos
+                </p>
+                <div class="service-meta">
+                  <span>🕒 1.5-2 horas</span>
+                  <span>📅 3-4 semanas</span>
+                </div>
+                <button class="service-btn">Quiero reservar</button>
+              </div>
+            </div>
+
+            <!-- Banner Promocional -->
+            <div class="promo-banner">
+              <img src="assets/bannercard.png" alt="Promoción especial" />
+              <div class="promo-overlay"></div>
+              <div class="promo-logo">VG</div>
+            </div>
+          </div>
+        </div>
+        <script src="card.js"></script>
+      </section>
+      <section class="seccion-testimonios">
+        <span class="texto-testimonios">¿Qué dicen nuestros clientes?</span>
+      </section>
+      <section class="comentarios-section">
+        <div class="comentarios-left">
+          <p class="comentarios-title">EXCELENTE</p>
+
+          <div class="comentarios-stars">⭐⭐⭐⭐⭐</div>
+
+          <p class="comentarios-based">A base de <strong>96 reseñas</strong></p>
+
+          <!-- GOOGLE CON LETRAS COLOREADAS -->
+          <p class="google-colored">
+            <span class="g-blue">G</span><span class="g-red">o</span
+            ><span class="g-yellow">o</span><span class="g-blue">g</span
+            ><span class="g-green">l</span><span class="g-red">e</span>
+          </p>
+        </div>
+
+        <div class="comentarios-slider-container">
+          <!-- FLECHAS SOLO MÓVIL -->
+          <button class="arrow-left">&#8249;</button>
+
+          <div class="comentarios-slider" id="comentariosSlider">
+            <!-- ======= 10 COMENTARIOS ======= -->
+
+            <!-- 1 -->
+            <div class="comentario-card">
+              <div class="comentario-header">
+                <div class="comentario-avatar">M</div>
+                <div>
+                  <p class="comentario-name">María García</p>
+                  <p class="comentario-date">2024-08-21</p>
+                </div>
+                <img
+                  src="assets/icon/icongoogle.png"
+                  class="comentario-google"
+                />
+              </div>
+
+              <div class="comentario-stars-row">
+                ⭐⭐⭐⭐⭐
+                <img src="assets/icon/verificado.png" class="verificado-icon" />
+              </div>
+
+              <p class="comentario-text">
+                Excelente servicio, súper profesional. Me encantó el trabajo.
+              </p>
+            </div>
+
+            <!-- 2 -->
+            <div class="comentario-card">
+              <div class="comentario-header">
+                <div class="comentario-avatar">S</div>
+                <div>
+                  <p class="comentario-name">Sofía López</p>
+                  <p class="comentario-date">2024-07-10</p>
+                </div>
+                <img
+                  src="assets/icon/icongoogle.png"
+                  class="comentario-google"
+                />
+              </div>
+
+              <div class="comentario-stars-row">
+                ⭐⭐⭐⭐⭐
+                <img src="assets/icon/verificado.png" class="verificado-icon" />
+              </div>
+
+              <p class="comentario-text">
+                Muy buena atención, muy recomendable el lugar.
+              </p>
+            </div>
+
+            <!-- 3 -->
+            <div class="comentario-card">
+              <div class="comentario-header">
+                <div class="comentario-avatar">H</div>
+                <div>
+                  <p class="comentario-name">Helena Herrera</p>
+                  <p class="comentario-date">2024-06-02</p>
+                </div>
+                <img
+                  src="assets/icon/icongoogle.png"
+                  class="comentario-google"
+                />
+              </div>
+
+              <div class="comentario-stars-row">
+                ⭐⭐⭐⭐⭐
+                <img src="assets/icon/verificado.png" class="verificado-icon" />
+              </div>
+
+              <p class="comentario-text">
+                Un trato excelente, quedé muy satisfecho con los resultados.
+              </p>
+            </div>
+
+            <!-- 4 -->
+            <div class="comentario-card">
+              <div class="comentario-header">
+                <div class="comentario-avatar">D</div>
+                <div>
+                  <p class="comentario-name">Daniela Díaz</p>
+                  <p class="comentario-date">2024-09-14</p>
+                </div>
+                <img
+                  src="assets/icon/icongoogle.png"
+                  class="comentario-google"
+                />
+              </div>
+
+              <div class="comentario-stars-row">
+                ⭐⭐⭐⭐⭐
+                <img src="assets/icon/verificado.png" class="verificado-icon" />
+              </div>
+
+              <p class="comentario-text">
+                Me gustó mucho el servicio, volveré sin dudas.
+              </p>
+            </div>
+
+            <!-- 5 -->
+            <div class="comentario-card">
+              <div class="comentario-header">
+                <div class="comentario-avatar">J</div>
+                <div>
+                  <p class="comentario-name">Julia Jiménez</p>
+                  <p class="comentario-date">2024-05-22</p>
+                </div>
+                <img
+                  src="assets/icon/icongoogle.png"
+                  class="comentario-google"
+                />
+              </div>
+
+              <div class="comentario-stars-row">
+                ⭐⭐⭐⭐⭐
+                <img src="assets/icon/verificado.png" class="verificado-icon" />
+              </div>
+
+              <p class="comentario-text">Trabajo impecable y muy detallista.</p>
+            </div>
+
+            <!-- 6 -->
+            <div class="comentario-card">
+              <div class="comentario-header">
+                <div class="comentario-avatar">P</div>
+                <div>
+                  <p class="comentario-name">Paula Pérez</p>
+                  <p class="comentario-date">2024-03-09</p>
+                </div>
+                <img
+                  src="assets/icon/icongoogle.png"
+                  class="comentario-google"
+                />
+              </div>
+
+              <div class="comentario-stars-row">
+                ⭐⭐⭐⭐⭐
+                <img src="assets/icon/verificado.png" class="verificado-icon" />
+              </div>
+
+              <p class="comentario-text">
+                Maravillosa experiencia, realmente recomendable.
+              </p>
+            </div>
+
+            <!-- 7 -->
+            <div class="comentario-card">
+              <div class="comentario-header">
+                <div class="comentario-avatar">D</div>
+                <div>
+                  <p class="comentario-name">Dolores Gómez</p>
+                  <p class="comentario-date">2024-08-30</p>
+                </div>
+                <img
+                  src="assets/icon/icongoogle.png"
+                  class="comentario-google"
+                />
+              </div>
+
+              <div class="comentario-stars-row">
+                ⭐⭐⭐⭐⭐
+                <img src="assets/icon/verificado.png" class="verificado-icon" />
+              </div>
+
+              <p class="comentario-text">Todo perfecto, súper recomendable.</p>
+            </div>
+
+            <!-- 8 -->
+            <div class="comentario-card">
+              <div class="comentario-header">
+                <div class="comentario-avatar">E</div>
+                <div>
+                  <p class="comentario-name">Elena Martín</p>
+                  <p class="comentario-date">2024-07-01</p>
+                </div>
+                <img
+                  src="assets/icon/icongoogle.png"
+                  class="comentario-google"
+                />
+              </div>
+
+              <div class="comentario-stars-row">
+                ⭐⭐⭐⭐⭐
+                <img src="assets/icon/verificado.png" class="verificado-icon" />
+              </div>
+
+              <p class="comentario-text">Excelente atención como siempre.</p>
+            </div>
+
+            <!-- 9 -->
+            <div class="comentario-card">
+              <div class="comentario-header">
+                <div class="comentario-avatar">J</div>
+                <div>
+                  <p class="comentario-name">Josefa Sánchez</p>
+                  <p class="comentario-date">2024-04-19</p>
+                </div>
+                <img
+                  src="assets/icon/icongoogle.png"
+                  class="comentario-google"
+                />
+              </div>
+
+              <div class="comentario-stars-row">
+                ⭐⭐⭐⭐⭐
+                <img src="assets/icon/verificado.png" class="verificado-icon" />
+              </div>
+
+              <p class="comentario-text">
+                Una experiencia increíble desde el primer momento.
+              </p>
+            </div>
+
+            <!-- 10 -->
+            <div class="comentario-card">
+              <div class="comentario-header">
+                <div class="comentario-avatar">M</div>
+                <div>
+                  <p class="comentario-name">Martina Martínez</p>
+                  <p class="comentario-date">2024-09-09</p>
+                </div>
+                <img
+                  src="assets/icon/icongoogle.png"
+                  class="comentario-google"
+                />
+              </div>
+
+              <div class="comentario-stars-row">
+                ⭐⭐⭐⭐⭐
+                <img src="assets/icon/verificado.png" class="verificado-icon" />
+              </div>
+
+              <p class="comentario-text">
+                Muy recomendado, excelente ambiente y servicio.
+              </p>
+            </div>
+          </div>
+
+          <button class="arrow-right">&#8250;</button>
+        </div>
+
+        <script src="comentarios.js"></script>
+      </section>
+    </header>
+    <footer id="sobre-contacto" class="footer-ubicacion">
+      <h1 class="footer-title">¿Cómo llego a valench?</h1>
+
+      <div class="footer-grid">
+        <div class="footer-mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.298594390214!2d-80.20832109999999!3d-0.924811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902b99007f479b8d%3A0x4cadb3bd92d98047!2sCasa%20de%20mis%20abuelitos%20paternos!5e0!3m2!1ses!2sar!4v1765560276407!5m2!1ses!2sar"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+
+        <div class="footer-redes">
+          <a
+            href="https://wa.me/593989001762?text=Hola%2C%20necesito%20una%20consulta%20o%20informacion"
+            target="_blank"
+            class="footer-red-card"
+          >
+            <div class="footer-icon-box">
+              <img
+                src="assets/icon/iconw.svg"
+                alt="WhatsApp Icon"
+                class="social-svg"
+              />
+            </div>
+            <span>whatsapp</span>
+          </a>
+
+          <a
+            href="https://www.instagram.com/valenchnails/"
+            target="_blank"
+            class="footer-red-card"
+          >
+            <div class="footer-icon-box">
+              <img
+                src="assets/icon/iconi.svg"
+                alt="Instagram Icon"
+                class="social-svg"
+              />
+            </div>
+            <span>instagram</span>
+          </a>
+
+          <a
+            href="https://www.facebook.com/profile.php?id=61584117718628"
+            target="_blank"
+            class="footer-red-card"
+          >
+            <div class="footer-icon-box">
+              <img
+                src="assets/icon/iconf.svg"
+                alt="Facebook Icon"
+                class="social-svg"
+              />
+            </div>
+            <span>facebook</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <div class="footer-info-item">
+          <img
+            src="assets/icon/mapa.svg"
+            alt="Ubicación Icono"
+            class="info-svg"
+          />
+          <span>Av. 8 de noviembre, ciudadela municipal, cantón Junín</span>
+        </div>
+
+        <div class="footer-info-item">
+          <img
+            src="assets/icon/correo.svg"
+            alt="Correo Icono"
+            class="info-svg"
+          />
+          <span>valenchnailsbeauty@gmail.com</span>
+        </div>
+
+        <div class="footer-info-item">
+          <span>© 2025 – Valench Nails Beauty</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
