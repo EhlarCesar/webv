@@ -292,7 +292,7 @@ body {
     font-family: "Abhaya Libre", serif;
     font-weight: 800;
     font-size: 2.8rem;
-    color: #d4af37;
+    color: #DDBD85;
     margin-bottom: 25px;
 }
 
@@ -1281,9 +1281,9 @@ body {
 /* ===================================== */
 :root {
   /* Colores principales */
-  --color-primary: #5d4357;
-  --color-secondary: #F5E6D3;
-  --color-accent: #D4AF7A;
+  --color-primary: #75505F;
+  --color-secondary: #DDBD85 ;
+  --color-accent:  #f0bf6c;
   --color-text-dark: #4A3428;
   --color-icon: #6B4423;
   
@@ -1730,4 +1730,96 @@ body {
   position: relative;
   width: 100%;
   overflow-x: hidden;
+}
+
+
+
+/* ===============================
+   FLOATING WHATSAPP CHAT
+================================ */
+
+.floating-whatsapp {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Burbuja de mensaje */
+.whatsapp-bubble {
+  background: #ffffff;
+  color: #333;
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(10px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Visible */
+.whatsapp-bubble.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Botón */
+.whatsapp-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.08);
+}
+
+.whatsapp-btn img {
+  width: 26px;
+  height: 26px;
+  display: block;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+/* Móvil */
+@media (max-width: 768px) {
+  .floating-whatsapp {
+    bottom: 18px;
+    right: 18px;
+  }
+
+  .whatsapp-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-btn img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .whatsapp-bubble {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
 }
