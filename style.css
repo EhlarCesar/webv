@@ -1897,7 +1897,7 @@ body {
 
 .floating-resena {
   position: fixed;
-  bottom: 90px; /* debajo del WhatsApp */
+  bottom: 90px;
   right: 22px;
   z-index: 9998;
   display: flex;
@@ -1932,14 +1932,12 @@ body {
   height: 56px;
   border-radius: 50%;
   border: none;
-  background: #f0bf6c;
+  background: #f0bf6c; /* TODO el fondo del color */
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow:
-    0 8px 20px rgba(0, 0, 0, 0.25),
-    0 0 0 6px rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   transition: transform 0.25s ease;
 }
 
@@ -1947,12 +1945,11 @@ body {
   transform: scale(1.08);
 }
 
-/* Imagen dentro del botón */
+/* Imagen */
 .resena-btn img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
+  width: 32px;   /* tamaño visible del ícono */
+  height: 32px;
+  object-fit: contain;
   display: block;
 }
 
@@ -1969,9 +1966,11 @@ body {
   .resena-btn {
     width: 46px;
     height: 46px;
-    box-shadow:
-      0 6px 16px rgba(0, 0, 0, 0.22),
-      0 0 0 4px rgba(255, 255, 255, 0.9);
+  }
+
+  .resena-btn img {
+    width: 26px;
+    height: 26px;
   }
 
   .resena-bubble {
