@@ -1897,7 +1897,7 @@ body {
 
 .floating-resena {
   position: fixed;
-  bottom: 90px; /* 👈 queda DEBAJO del WhatsApp */
+  bottom: 90px; /* debajo del WhatsApp */
   right: 22px;
   z-index: 9998;
   display: flex;
@@ -1905,7 +1905,7 @@ body {
   gap: 12px;
 }
 
-/* Burbuja */
+/* Burbuja de texto */
 .resena-bubble {
   background: #ffffff;
   color: #333;
@@ -1926,23 +1926,40 @@ body {
   transform: translateX(0);
 }
 
-/* Botón */
-
+/* Botón circular */
+.resena-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: #f0bf6c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.25),
+    0 0 0 6px rgba(255, 255, 255, 0.9);
+  transition: transform 0.25s ease;
+}
 
 .resena-btn:hover {
   transform: scale(1.08);
 }
 
+/* Imagen dentro del botón */
 .resena-btn img {
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* llena el círculo sin deformar */
+  object-fit: cover;
   border-radius: 50%;
   display: block;
 }
 
+/* ===============================
+   RESPONSIVE (MÓVIL)
+================================ */
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .floating-resena {
     bottom: 85px;
@@ -1950,13 +1967,11 @@ body {
   }
 
   .resena-btn {
-    width: 50px;
-    height: 50px;
-  }
-
-  .resena-btn img {
-    width: 24px;
-    height: 24px;
+    width: 46px;
+    height: 46px;
+    box-shadow:
+      0 6px 16px rgba(0, 0, 0, 0.22),
+      0 0 0 4px rgba(255, 255, 255, 0.9);
   }
 
   .resena-bubble {
