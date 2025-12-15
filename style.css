@@ -743,7 +743,7 @@ body {
   
   /* Hacemos que se comporte como un bloque en línea para el subrayado */
   display: inline-block;
-  text-transform: lowercase; /* Mantiene las letras en minúscula */
+  
 }
 
 /* ---------------------------------------------------- */
