@@ -1892,6 +1892,16 @@ body {
 
 
 /* ===============================
+   GLOBAL FIX (quita highlight del navegador)
+================================ */
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+/* ===============================
    FLOATING RESEÑA
 ================================ */
 
@@ -1918,7 +1928,7 @@ body {
   opacity: 0;
   transform: translateX(10px);
   pointer-events: none;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .resena-bubble.show {
@@ -1932,25 +1942,33 @@ body {
   height: 56px;
   border-radius: 50%;
   border: none;
-  background: #f0bf6c; /* TODO el fondo del color */
+  background: #f0bf6c;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+/* Hover desktop */
 .resena-btn:hover {
   transform: scale(1.08);
 }
 
+/* Tap / Click (feedback propio, sin cuadrado) */
+.resena-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
 /* Imagen */
 .resena-btn img {
-  width: 32px;   /* tamaño visible del ícono */
+  width: 32px;
   height: 32px;
   object-fit: contain;
   display: block;
+  pointer-events: none;
 }
 
 /* ===============================
